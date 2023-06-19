@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 441.65 117.43">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .05em;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: ShipporiMincho-Bold, 'Shippori Mincho';
+        font-size: 20.21px;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: .05em;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #d0b580;
+        font-family: GaramondPremrPro-ItDisp, 'Garamond Premier Pro';
+        font-size: 166.88px;
+        font-style: italic;
+      }
+
+      .cls-2 {
+        letter-spacing: .05em;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        letter-spacing: .05em;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-6" y="0" width="441.65" height="117.43"/>
+    </clipPath>
+  </defs>
+  <g id="_レイヤー_2-2" data-name="レイヤー 2">
+    <g class="cls-5">
+      <text class="cls-1" transform="translate(.19 41.94)"><tspan x="0" y="0">富士見公園</tspan></text>
+      <text class="cls-1" transform="translate(.19 66.82)"><tspan x="0" y="0">まで徒歩</tspan></text>
+      <text class="cls-1" transform="translate(180.74 111.32)"><tspan x="0" y="0">分</tspan></text>
+      <text class="cls-2" transform="translate(418.48 111.32)"><tspan x="0" y="0">分</tspan></text>
+      <text class="cls-1" transform="translate(231.8 41.94)"><tspan x="0" y="0">彩の森公園</tspan></text>
+      <text class="cls-1" transform="translate(231.8 66.82)"><tspan x="0" y="0">まで徒歩</tspan></text>
+      <text class="cls-3" transform="translate(111.44 106.6)"><tspan x="0" y="0">5</tspan></text>
+      <text class="cls-4" transform="translate(343.11 106.6)"><tspan x="0" y="0">9</tspan></text>
+    </g>
+  </g>
+</svg>

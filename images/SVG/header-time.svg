@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 448.64 117.1">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .11em;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        font-family: ShipporiMincho-Regular, 'Shippori Mincho';
+        font-size: 20.21px;
+      }
+
+      .cls-5 {
+        letter-spacing: .05em;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #d0b580;
+        font-family: GaramondPremrPro-ItDisp, 'Garamond Premier Pro';
+        font-size: 166.88px;
+        font-style: italic;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-9 {
+        fill: none;
+      }
+
+      .cls-6 {
+        letter-spacing: .05em;
+      }
+
+      .cls-10, .cls-4 {
+        letter-spacing: .05em;
+      }
+
+      .cls-3 {
+        letter-spacing: .05em;
+      }
+
+      .cls-11 {
+        letter-spacing: -.14em;
+      }
+
+      .cls-12 {
+        letter-spacing: 0em;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-9" width="448.64" height="117.1"/>
+    </clipPath>
+  </defs>
+  <g id="_レイヤー_2-2" data-name="レイヤー 2">
+    <g class="cls-8">
+      <text class="cls-4" transform="translate(11.04 42.25)"><tspan x="0" y="0">富士見公園</tspan></text>
+      <text class="cls-2" transform="translate(7.78 67.13)"><tspan class="cls-11" x="0" y="0">ま</tspan><tspan class="cls-1" x="17.38" y="0">で</tspan><tspan class="cls-10" x="39.73" y="0">徒歩</tspan></text>
+      <text class="cls-4" transform="translate(191.59 111.63)"><tspan x="0" y="0">分</tspan></text>
+      <text class="cls-3" transform="translate(429.34 111.63)"><tspan x="0" y="0">分</tspan></text>
+      <text class="cls-2" transform="translate(242.66 42.25)"><tspan class="cls-7" x="0" y="0">彩</tspan><tspan class="cls-12" x="20.31" y="0">の</tspan><tspan class="cls-10" x="40.58" y="0">森公園</tspan></text>
+      <text class="cls-2" transform="translate(239.4 67.13)"><tspan class="cls-11" x="0" y="0">ま</tspan><tspan class="cls-1" x="17.38" y="0">で</tspan><tspan class="cls-10" x="39.73" y="0">徒歩</tspan></text>
+      <text class="cls-5" transform="translate(122.29 106.92)"><tspan x="0" y="0">5</tspan></text>
+      <text class="cls-6" transform="translate(353.96 106.92)"><tspan x="0" y="0">9</tspan></text>
+    </g>
+  </g>
+</svg>
