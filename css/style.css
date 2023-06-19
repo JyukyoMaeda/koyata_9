@@ -446,22 +446,50 @@ img {
 }
 .l-contents.-img-bg .l-contentsBox.-top-op {
   top: 81%;
-  left: 22%;
   transform: translate(-50%, -50%);
   width: 38%;
 }
 @media screen and (min-width: 767px) {
   .l-contents.-img-bg .l-contentsBox.-top-op {
     top: 88%;
-    left: 18%;
     width: 33%;
   }
 }
 @media screen and (min-width: 1600px) {
   .l-contents.-img-bg .l-contentsBox.-top-op {
     top: 81%;
+    width: 35%;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-top-op.-left {
+  left: 22%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-top-op.-left {
+    left: 18%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .l-contents.-img-bg .l-contentsBox.-top-op.-left {
     left: 5%;
-    width: 38%;
+  }
+}
+.l-contents.-img-bg .l-contentsBox.-top-op.-right {
+  right: -15%;
+}
+@media screen and (max-width: 768px) {
+  .l-contents.-img-bg .l-contentsBox.-top-op.-right {
+    top: 74%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-top-op.-right {
+    right: -16.5%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .l-contents.-img-bg .l-contentsBox.-top-op.-right {
+    right: -34%;
   }
 }
 .l-contents.-img-bg .l-contentsBox.-built-op {
@@ -2539,6 +2567,12 @@ img {
 }
 .l-text.-black a {
   color: black;
+}
+.l-text.-beige {
+  color: #b1a595;
+}
+.l-text.-beige a {
+  color: #b1a595;
 }
 .l-text.-green {
   text-shadow: 1px 1px 10px rgb(236, 236, 236);

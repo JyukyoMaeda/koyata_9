@@ -34,18 +34,36 @@
 			}
 			&.-top-op{
 				top: 81%;
-				left: 22%;
 				transform: translate(-50%, -50%);
 				width: 38%;
 				@include mq(tb){
 					top: 88%;
-					left: 18%;
 					width: 33%;
 				}
 				@include mq(pc){
 					top: 81%;
-					left: 5%;
-					width: 38%;
+					width: 35%;
+				}
+				&.-left{
+					left: 22%;
+					@include mq(tb){
+						left: 18%;
+					}
+					@include mq(pc){
+						left: 5%;
+					}
+				}
+				&.-right{
+					right: -15%;
+					@include mq(sp){
+						top: 74%;
+					}
+					@include mq(tb){
+						right: -16.5%;
+					}
+					@include mq(pc){
+						right: -34%;
+					}
 				}
 			}
 			&.-built-op{

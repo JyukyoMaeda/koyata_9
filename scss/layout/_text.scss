@@ -353,6 +353,14 @@
             color: black;
         }
     }
+    &.-beige{
+        color: $main-color--beige;
+        a{
+            color: $main-color--beige;
+        }
+    }
+
+
     &.-red{
     }
     &.-blue{
