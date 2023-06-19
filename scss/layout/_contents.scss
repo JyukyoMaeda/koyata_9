@@ -91,6 +91,26 @@
 					height: auto;
 				}
 			}
+			&.-topBtn{
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				a{
+					display: block;
+					padding: 15% 23%;
+				}
+			}
+			&.-btmBtn{
+				top: 50%;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+				a{
+					display: block;
+					padding: 8% 23%;
+				}
+			}
 		}
 		&.-pc80{
 			width: 80%;

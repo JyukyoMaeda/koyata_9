@@ -124,6 +124,25 @@ img {
   vertical-align: bottom;
 }
 
+#sp-btm-contactArea {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 9999;
+}
+
+#pc-right-contactArea {
+  position: fixed;
+  top: 33%;
+  right: 2%;
+  z-index: 9999;
+}
+#pc-right-contactArea .base-bg {
+  max-width: 45px;
+}
+
 .w1200 {
   width: 95%;
   max-width: 1200px;
@@ -138,14 +157,14 @@ img {
 
 @media screen and (max-width: 768px) {
   .w90-s {
-    width: 90%;
+    width: 90% !important;
     margin: auto;
   }
 }
 
 @media screen and (max-width: 768px) {
   .w93-s {
-    width: 93%;
+    width: 93% !important;
     margin: auto;
   }
 }
@@ -521,6 +540,26 @@ img {
     height: auto;
   }
 }
+.l-contents.-img-bg .l-contentsBox.-topBtn {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.l-contents.-img-bg .l-contentsBox.-topBtn a {
+  display: block;
+  padding: 15% 23%;
+}
+.l-contents.-img-bg .l-contentsBox.-btmBtn {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.l-contents.-img-bg .l-contentsBox.-btmBtn a {
+  display: block;
+  padding: 8% 23%;
+}
 .l-contents.-img-bg.-pc80 {
   width: 80%;
   margin: auto;
@@ -861,19 +900,31 @@ img {
     overflow: hidden;
   }
 }
-@media screen and (max-width: 768px) {
+.l-flex--area .l-flex--contents.-flexContent__box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 767px) {
   .l-flex--area .l-flex--contents.-flexContent__box {
-    display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-around;
   }
 }
 @media screen and (max-width: 768px) {
   .l-flex--area .l-flex--contents.-flexContent__box .flexItem:nth-child(1) {
-    width: 60%;
-    padding-right: 5%;
+    width: 40%;
   }
   .l-flex--area .l-flex--contents.-flexContent__box .flexItem:nth-child(2) {
-    width: 40%;
+    width: 55%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-flex--area .l-flex--contents.-flexContent__box .flexItem:nth-child(1) {
+    width: 25%;
+  }
+  .l-flex--area .l-flex--contents.-flexContent__box .flexItem:nth-child(2) {
+    width: 65%;
   }
 }
 .l-flex--area .l-flex--contents.-built--plan {
@@ -1266,16 +1317,16 @@ img {
   }
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(1) .l-linkImg {
-  background: #332615;
+  background: #002a37;
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(2) .l-linkImg {
-  background: rgba(51, 38, 21, 0.6901960784);
+  background: hsla(194, 100%, 11%, 0.8);
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(3) .l-linkImg {
-  background: rgba(51, 38, 21, 0.4588235294);
+  background: hsla(194, 100%, 11%, 0.6);
 }
 .l-flex--area .l-flex--contents.-contact-box .flexItem:nth-child(4) .l-linkImg {
-  background: rgba(51, 38, 21, 0.231372549);
+  background: hsla(194, 100%, 11%, 0.4);
 }
 .l-flex--area .l-flex--contents.-tab-box {
   width: 90vw;
@@ -1519,7 +1570,7 @@ img {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 92%;
+  width: 100%;
   max-width: 1200px;
   height: 0.1vh;
   background: black;
@@ -1952,16 +2003,16 @@ img {
   }
 }
 .l-linkImg.-contact-box.-box01 {
-  background: #332615;
+  background: #002a37;
 }
 .l-linkImg.-contact-box.-box02 {
-  background: rgba(51, 38, 21, 0.6901960784);
+  background: hsla(194, 100%, 11%, 0.8);
 }
 .l-linkImg.-contact-box.-box03 {
-  background: rgba(51, 38, 21, 0.4588235294);
+  background: hsla(194, 100%, 11%, 0.6);
 }
 .l-linkImg.-contact-box.-box04 {
-  background: rgba(51, 38, 21, 0.231372549);
+  background: hsla(194, 100%, 11%, 0.4);
 }
 .l-linkImg.-underLine {
   position: relative;
@@ -2045,16 +2096,16 @@ img {
 }
 
 .more-lists .more-list:first-child .l-linkImg.-underLine:hover {
-  background: #332615;
+  background: #002a37;
 }
 .more-lists .more-list:nth-child(2) .l-linkImg.-underLine:hover {
-  background: rgba(51, 38, 21, 0.6901960784);
+  background: hsla(194, 100%, 11%, 0.8);
 }
 .more-lists .more-list:nth-child(3) .l-linkImg.-underLine:hover {
-  background: rgba(51, 38, 21, 0.4588235294);
+  background: hsla(194, 100%, 11%, 0.6);
 }
 .more-lists .more-list:nth-child(4) .l-linkImg.-underLine:hover {
-  background: rgba(51, 38, 21, 0.231372549);
+  background: hsla(194, 100%, 11%, 0.4);
 }
 
 .inline {
@@ -2255,16 +2306,6 @@ img {
     font-size: clamp(10px, 1.8vw, 24px);
   }
 }
-@media screen and (max-width: 768px) {
-  .l-text.-sizeL.-s15 {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .l-text.-sizeL.-s16 {
-    font-size: 16px;
-  }
-}
 .l-text.-sizeLL {
   font-size: 18px;
 }
@@ -2273,33 +2314,8 @@ img {
     font-size: clamp(10px, 2.5vw, 28px);
   }
 }
-@media screen and (max-width: 768px) {
-  .l-text.-sizeLL.-s24 {
-    font-size: 24px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .l-text.-sizeLL.-s17 {
-    font-size: 17px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .l-text.-sizeLL.-s18 {
-    font-size: 18px;
-  }
-}
 .l-text.-size3L {
   font-size: 20px;
-}
-@media screen and (max-width: 768px) {
-  .l-text.-size3L.-s30 {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .l-text.-size3L.-s32 {
-    font-size: 32px;
-  }
 }
 @media screen and (min-width: 767px) {
   .l-text.-size3L {
@@ -2327,6 +2343,51 @@ img {
 @media screen and (min-width: 767px) {
   .l-text.-size4L.-v02 {
     font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-text.-s10 {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-text.-s12 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-text.-s15 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-text.-s16 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-text.-s17 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-text.-s18 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-text.-s24 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-text.-s30 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-text.-s32 {
+    font-size: 32px;
   }
 }
 .l-text.-left {
@@ -2593,6 +2654,12 @@ img {
 }
 .l-text.-s-white {
   text-shadow: 2px 2px 3px white;
+}
+.l-text.-site-c {
+  color: #002a37;
+}
+.l-text.-site-c a {
+  color: #002a37;
 }
 
 .l-testBg {

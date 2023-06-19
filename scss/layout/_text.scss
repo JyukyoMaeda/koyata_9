@@ -49,51 +49,15 @@
             @include mq(tb){
                 font-size: clamp(10px, 1.8vw, 24px);
             }
-            &.-s15{
-                @include mq(sp){
-                    font-size: 15px;
-                }
-            }
-            &.-s16{
-                @include mq(sp){
-                    font-size: 16px;
-                }
-            }
-    
         }
         &.-sizeLL{//30px
             font-size: 18px;
             @include mq(tb){
                 font-size: clamp(10px, 2.5vw, 28px);
             }
-            &.-s24{
-                @include mq(sp){
-                    font-size: 24px;
-                }
-            }
-            &.-s17{
-                @include mq(sp){
-                    font-size: 17px;
-                }
-            }
-            &.-s18{
-                @include mq(sp){
-                    font-size: 18px;
-                }
-            }
         }
         &.-size3L{//35px
             font-size: 20px;
-            &.-s30{
-                @include mq(sp){
-                    font-size: 30px;
-                }
-            }
-            &.-s32{
-                @include mq(sp){
-                    font-size: 32px;
-                }
-            }
             @include mq(tb){
                 font-size: 2.5rem;
             }
@@ -114,6 +78,51 @@
                 @include mq(tb){
                     font-size: 5.5rem;
                 }
+            }
+        }
+        &.-s10{
+            @include mq(sp){
+                font-size: 10px;
+            }
+        }
+        &.-s12{
+            @include mq(sp){
+                font-size: 12px;
+            }
+        }
+        &.-s15{
+            @include mq(sp){
+                font-size: 15px;
+            }
+        }
+        &.-s16{
+            @include mq(sp){
+                font-size: 16px;
+            }
+        }
+        &.-s17{
+            @include mq(sp){
+                font-size: 17px;
+            }
+        }
+        &.-s18{
+            @include mq(sp){
+                font-size: 18px;
+            }
+        }
+        &.-s24{
+            @include mq(sp){
+                font-size: 24px;
+            }
+        }
+        &.-s30{
+            @include mq(sp){
+                font-size: 30px;
+            }
+        }
+        &.-s32{
+            @include mq(sp){
+                font-size: 32px;
             }
         }
     // 位置
@@ -364,8 +373,6 @@
             color: $main-color--beige;
         }
     }
-
-
     &.-red{
         color: #a1222f;
         a{
@@ -383,5 +390,13 @@
     }
     &.-s-white{
         text-shadow: 2px 2px 3px white;
+    }
+
+
+    &.-site-c{
+        color: $site-color01;
+        a{
+            color: $site-color01;
+        }
     }
 }

@@ -291,18 +291,30 @@
 			}
 		}
 		&.-flexContent__box{
-			@include mq(sp){
+			// @include mq(sp){
 				display: flex;
 				flex-wrap: nowrap;
-			}
+				justify-content: space-between;
+				align-items: center;
+				@include mq(tb){
+					justify-content: space-around;
+				}
+			// }
 			.flexItem{
 				@include mq(sp){
 					&:nth-child(1){
-						width: 60%;
-						padding-right: 5%;
+						width: 40%;
 					}
 					&:nth-child(2){
-						width: 40%;
+						width:55%;
+					}
+				}
+				@include mq(tb){
+					&:nth-child(1){
+						width: 25%;
+					}
+					&:nth-child(2){
+						width: 65%;
 					}
 				}
 			}
