@@ -124,10 +124,10 @@
 
         z-index: -1;
         @include mq(tb){
-            width: 60%;
+            width: 51%;
         }
         @include mq(tb-pc1400){
-            width: 80%;
+            width: 63%;
         }
     }
 }

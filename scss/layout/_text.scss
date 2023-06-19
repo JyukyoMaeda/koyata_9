@@ -181,6 +181,11 @@
     &.-family05{//メイリオ
         font-family:'メイリオ', 'Meiryo', sans-serif;
     }
+    &.-family06{//Trajan
+        font-family: "trajan-pro-3", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
 
     &.-REQUEST{
         background: white;
@@ -362,6 +367,10 @@
 
 
     &.-red{
+        color: #a1222f;
+        a{
+            color: #a1222f;
+        }
     }
     &.-blue{
     }

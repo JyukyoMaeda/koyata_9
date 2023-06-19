@@ -1527,12 +1527,12 @@ img {
 }
 @media screen and (min-width: 767px) {
   .-border::after {
-    width: 60%;
+    width: 51%;
   }
 }
 @media screen and (min-width: 1400px) {
   .-border::after {
-    width: 80%;
+    width: 63%;
   }
 }
 
@@ -2394,6 +2394,11 @@ img {
 .l-text.-family05 {
   font-family: "メイリオ", "Meiryo", sans-serif;
 }
+.l-text.-family06 {
+  font-family: "trajan-pro-3", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .l-text.-REQUEST {
   background: white;
 }
@@ -2573,6 +2578,12 @@ img {
 }
 .l-text.-beige a {
   color: #b1a595;
+}
+.l-text.-red {
+  color: #a1222f;
+}
+.l-text.-red a {
+  color: #a1222f;
 }
 .l-text.-green {
   text-shadow: 1px 1px 10px rgb(236, 236, 236);
