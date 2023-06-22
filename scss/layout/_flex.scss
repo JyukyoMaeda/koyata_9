@@ -242,6 +242,36 @@
 					}
 				}
 		}
+		&.-columnBox04{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			@include mq(tb){
+				flex-wrap: nowrap;
+				justify-content: space-around;
+			}
+			&.-reverse_s{
+				@include mq(sp){
+					.flexItem{
+						// &:nth-child(1){
+						// 	order: 2;
+						// }
+						// &:nth-child(2){
+						// 	order: 1;
+						// }
+					}
+				}
+			}
+			.flexItem{
+				width: 50%;
+				padding: 0 2%;
+				@include mq(tb){
+					width: 25%;
+					padding: 0 2%;
+				}
+			}
+		}
+
 
 		&.-flexView{
 			display: flex;
