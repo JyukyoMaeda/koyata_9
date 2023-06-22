@@ -2502,6 +2502,11 @@ img {
   }
 }
 @media screen and (max-width: 768px) {
+  .l-text.-s14 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
   .l-text.-s15 {
     font-size: 15px;
   }
