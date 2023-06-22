@@ -2,6 +2,17 @@
 .l-flex--area{
 	height: 100%;
 	.l-flex--contents{
+		.flexItem{
+			&.-noPD{
+				padding: 0 !important;
+			}
+			&.-noPD_r{
+				padding-right: 0 !important;
+			}
+			&.-noPD_l{
+				padding-left: 0 !important;
+			}
+		}
 		&.-header-top03{//---- 横3列
 			display: flex;
 			flex-wrap: nowrap;
@@ -168,18 +179,36 @@
 			}
 		}
 		&.-columnBox{
-
+			display: flex;
+			flex-wrap: wrap;
 			align-items: center;
 			@include mq(tb){
-				display: flex;
 				flex-wrap: nowrap;
+				align-items: flex-start;
 				justify-content: space-around;
 			}
+			&.-reverse_s{
+				@include mq(sp){
+					.flexItem{
+						&:nth-child(1){
+							order: 2;
+						}
+						&:nth-child(2){
+							order: 1;
+						}
+					}
+				}
+			}
 			.flexItem{
-				padding: 2% 0;
+				width: 100%;
+				padding: 0 5%;
+				@include mq(tb){
+					width: 50%;
+					padding: 0 2%;
+				}
 				&.title{
 					@include mq(tb){
-						width: 30%;
+						width: 0%;
 					}
 				}
 				&.des{
@@ -188,6 +217,30 @@
 					}
 				}
 			}
+		}
+		&.-columnBox02{
+				display: flex;
+				flex-wrap: nowrap;
+				align-items: flex-start;
+				justify-content: space-around;
+				.flexItem{
+					width: 100%;
+					padding: 0 5%;
+					@include mq(tb){
+						width: 50%;
+						padding: 0 2%;
+					}
+					&.title{
+						@include mq(tb){
+							width: 0%;
+						}
+					}
+					&.des{
+						@include mq(tb){
+							width: 70%;
+						}
+					}
+				}
 		}
 
 		&.-flexView{

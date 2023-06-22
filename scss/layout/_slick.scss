@@ -96,3 +96,48 @@
         }
     }
 }
+
+.slider_btn01{
+    &.slide-arrow {
+        width: 8vw;
+        background: $main-color--w;
+        filter: drop-shadow(1px 1px 1px black);
+        border-radius: 50%;
+        transition: .8s all;
+        z-index: 99;
+        @include mq(tb){
+            width: 3vw;
+            max-width: 80px;
+        }
+        @include mq(pc){
+            width: 2.5vw;
+            max-width: 80px;
+        }
+        &:hover{
+            background: $item-hover--bg;
+        }
+    }
+    &.prev-arrow {
+        position: absolute;
+        top: -9%;
+        left: 1%;
+        transform: translateY(-50%);
+        @include mq(tb){
+            top: 50%;
+            left: 1.5%;
+        }
+        &:hover{
+            
+        }
+    }
+    &.next-arrow {
+        position: absolute;
+        top: -9%;
+        right: 12%;
+        transform: translateY(-50%);
+        @include mq(tb){
+            top: 50%;
+            right: 6%;
+        }
+    }
+}

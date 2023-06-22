@@ -256,3 +256,10 @@ img{
 		padding-bottom: 10vh !important;
 	}
 }
+
+.border{
+	border-bottom: 1px solid black;
+	@include mq(tb){
+
+	}
+}

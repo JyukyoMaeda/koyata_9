@@ -344,6 +344,9 @@ img {
   }
 }
 
+.border {
+  border-bottom: 1px solid black;
+}
 .l-btnImg {
   display: block;
   width: auto;
@@ -603,9 +606,22 @@ img {
     margin-top: -15vh;
   }
 }
+.l-contents.grayBox {
+  padding: 2.5vh 2vw;
+  background: #ebebeb;
+}
 
 .l-flex--area {
   height: 100%;
+}
+.l-flex--area .l-flex--contents .flexItem.-noPD {
+  padding: 0 !important;
+}
+.l-flex--area .l-flex--contents .flexItem.-noPD_r {
+  padding-right: 0 !important;
+}
+.l-flex--area .l-flex--contents .flexItem.-noPD_l {
+  padding-left: 0 !important;
 }
 .l-flex--area .l-flex--contents.-header-top03 {
   display: flex;
@@ -795,25 +811,68 @@ img {
   transform: scale(1.1);
 }
 .l-flex--area .l-flex--contents.-columnBox {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 @media screen and (min-width: 767px) {
   .l-flex--area .l-flex--contents.-columnBox {
-    display: flex;
     flex-wrap: nowrap;
+    align-items: flex-start;
     justify-content: space-around;
   }
 }
+@media screen and (max-width: 768px) {
+  .l-flex--area .l-flex--contents.-columnBox.-reverse_s .flexItem:nth-child(1) {
+    order: 2;
+  }
+  .l-flex--area .l-flex--contents.-columnBox.-reverse_s .flexItem:nth-child(2) {
+    order: 1;
+  }
+}
 .l-flex--area .l-flex--contents.-columnBox .flexItem {
-  padding: 2% 0;
+  width: 100%;
+  padding: 0 5%;
+}
+@media screen and (min-width: 767px) {
+  .l-flex--area .l-flex--contents.-columnBox .flexItem {
+    width: 50%;
+    padding: 0 2%;
+  }
 }
 @media screen and (min-width: 767px) {
   .l-flex--area .l-flex--contents.-columnBox .flexItem.title {
-    width: 30%;
+    width: 0%;
   }
 }
 @media screen and (min-width: 767px) {
   .l-flex--area .l-flex--contents.-columnBox .flexItem.des {
+    width: 70%;
+  }
+}
+.l-flex--area .l-flex--contents.-columnBox02 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.l-flex--area .l-flex--contents.-columnBox02 .flexItem {
+  width: 100%;
+  padding: 0 5%;
+}
+@media screen and (min-width: 767px) {
+  .l-flex--area .l-flex--contents.-columnBox02 .flexItem {
+    width: 50%;
+    padding: 0 2%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-flex--area .l-flex--contents.-columnBox02 .flexItem.title {
+    width: 0%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .l-flex--area .l-flex--contents.-columnBox02 .flexItem.des {
     width: 70%;
   }
 }
@@ -2149,7 +2208,7 @@ img {
   transition: all 0.5s;
 }
 .l-linkText:hover {
-  color: rgba(143, 143, 143, 0.9019607843);
+  color: #ebebeb;
 }
 .l-linkText.-borderBox {
   width: auto;
@@ -2266,6 +2325,54 @@ img {
 
 .slick-active button:before {
   color: #002a37 !important;
+}
+
+.slider_btn01.slide-arrow {
+  width: 8vw;
+  background: #ffffff;
+  filter: drop-shadow(1px 1px 1px black);
+  border-radius: 50%;
+  transition: 0.8s all;
+  z-index: 99;
+}
+@media screen and (min-width: 767px) {
+  .slider_btn01.slide-arrow {
+    width: 3vw;
+    max-width: 80px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .slider_btn01.slide-arrow {
+    width: 2.5vw;
+    max-width: 80px;
+  }
+}
+.slider_btn01.slide-arrow:hover {
+  background: #9e9a9a;
+}
+.slider_btn01.prev-arrow {
+  position: absolute;
+  top: -9%;
+  left: 1%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 767px) {
+  .slider_btn01.prev-arrow {
+    top: 50%;
+    left: 1.5%;
+  }
+}
+.slider_btn01.next-arrow {
+  position: absolute;
+  top: -9%;
+  right: 12%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 767px) {
+  .slider_btn01.next-arrow {
+    top: 50%;
+    right: 6%;
+  }
 }
 
 .l-text {
@@ -2391,6 +2498,11 @@ img {
 @media screen and (max-width: 768px) {
   .l-text.-s18 {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-text.-s20 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -4893,6 +5005,184 @@ header {
 }
 #pageTop.DownMove {
   animation: DownAnime 0.5s forwards;
+}
+
+.swiperArea {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+}
+@media screen and (min-width: 767px) {
+  .swiperArea .swiper-container {
+    padding: 0 40px;
+  }
+}
+.swiperArea .swiper-container.card-swiper {
+  margin-bottom: 80px;
+}
+.swiperArea .swiper-container.card-swiper:last-child {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 767px) {
+  .swiperArea .swiper-container.card-swiper:last-child {
+    margin-bottom: 80px;
+  }
+}
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next,
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev {
+  width: 45px; /* 背景画像の幅を必ず指定 */
+  height: 45px; /* 背景画像の高さを必ず指定 */
+  transform: translateY(-50%);
+  background: gray;
+  border: 1px solid white;
+  border-radius: 50%;
+  opacity: 1;
+  transition: all 0.5s;
+  z-index: 6 !important;
+}
+@media screen and (max-width: 768px) {
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next,
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev {
+    top: 50%;
+    transform: scale(0.5, 0.5) translateY(-50%);
+  }
+}
+@media screen and (min-width: 767px) {
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next,
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next::after,
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev::after {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  content: ""; /* 空指定してデフォルトの矢印を消す */
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next:hover,
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev {
+    left: -10px;
+  }
+}
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-prev::after {
+  border-width: 11px 14px 11px 0;
+  border-color: transparent #fff transparent transparent;
+  right: 25%;
+}
+@media screen and (max-width: 768px) {
+  .swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next {
+    right: -10px;
+  }
+}
+.swiperArea .swiper-container.card-swiper.-sliderItem01 .swiper-button-next::after {
+  border-width: 11px 0 11px 14px;
+  border-color: transparent transparent transparent #fff;
+  left: 55%;
+}
+.swiperArea .swiper-container .swiper-pagination {
+  bottom: 4.5%;
+  z-index: 5 !important;
+}
+@media screen and (min-width: 767px) {
+  .swiperArea .swiper-container .swiper-pagination {
+    bottom: 7%;
+  }
+}
+.swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background: #002a37;
+}
+.swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  transition: 0.5s all;
+}
+@media screen and (min-width: 767px) {
+  .swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    width: 0.8vw;
+    height: 0.8vw;
+    margin: 0 0.8vw;
+  }
+}
+.swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet:hover {
+  background: #024c63;
+}
+.swiperArea .swiper-container.thumbnail {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .swiperArea .swiper-container.thumbnail .swiper-wrapper {
+    justify-content: space-between;
+  }
+}
+.swiperArea .swiper-container.thumbnail .swiper-slide.s-item {
+  width: calc(33.3333% - 5px) !important;
+  height: auto;
+  padding: 0 2.5px;
+  margin-bottom: 5px;
+}
+.swiperArea .swiper-container.thumbnail .swiper-slide.s-item img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  .g-sliderBox01 .swiper-pagination {
+    bottom: 49.7% !important;
+  }
+}
+
+.swiper-title {
+  width: 100%;
+  margin: auto;
+}
+@media screen and (min-width: 767px) {
+  .swiper-title {
+    width: 85%;
+  }
+}
+
+.card {
+  width: 365px;
+  height: auto;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-L {
+  width: 85%;
+  height: auto;
+  margin: auto;
+}
+@media screen and (min-width: 767px) {
+  .card-L {
+    width: 95%;
+    max-width: 1260px;
+  }
+}
+.card-L img {
+  width: 100%;
+  height: auto;
+}
+
+.washatendArea {
+  margin: 0 auto 90px;
+}
+
+.thumbnail .swiper-slide {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.thumbnail .swiper-slide-thumb-active {
+  opacity: 1;
 }
 
 @keyframes fadein {

@@ -124,6 +124,7 @@
 					width: 15%;
 				}
 			}
+
 		}
 		&.-pc80{
 			width: 80%;
@@ -163,6 +164,10 @@
 		@include mq(tb){
 			margin-top: -15vh;
 		}
+	}
+	&.grayBox{
+		padding: 2.5vh 2vw;
+		background: $main-color--gray;
 	}
 }
 
