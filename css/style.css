@@ -144,7 +144,7 @@ img {
 }
 
 .w1200 {
-  width: 95%;
+  width: 95% !important;
   max-width: 1200px;
   margin: auto;
 }
@@ -458,7 +458,7 @@ img {
     margin: auto;
   }
 }
-.l-contents.-img-bg .l-contentsBox.-kukaku, .l-contents.-img-bg .l-contentsBox.-location-trainBox, .l-contents.-img-bg .l-contentsBox.-builtPlanText, .l-contents.-img-bg .l-contentsBox.-setsubiText {
+.l-contents.-img-bg .l-contentsBox.-text, .l-contents.-img-bg .l-contentsBox.-setsubiText {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -560,6 +560,19 @@ img {
   display: block;
   padding: 8% 23%;
 }
+.l-contents.-img-bg .l-contentsBox.-cityscapce-btn {
+  top: 98%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45%;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-img-bg .l-contentsBox.-cityscapce-btn {
+    top: 95%;
+    left: 19%;
+    width: 15%;
+  }
+}
 .l-contents.-img-bg.-pc80 {
   width: 80%;
   margin: auto;
@@ -584,6 +597,11 @@ img {
 }
 .l-contents.-borderBtm {
   border-bottom: 1px solid black;
+}
+@media screen and (min-width: 767px) {
+  .l-contents.-cityscapce-view {
+    margin-top: -15vh;
+  }
 }
 
 .l-flex--area {
