@@ -1325,6 +1325,23 @@ img {
 .l-flex--area .l-flex--contents.-setsubi-itemArea03_01 .flexItem.-w {
   width: 100%;
 }
+.l-flex--area .l-flex--contents.-p-title01 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.l-flex--area .l-flex--contents.-p-title01 .flexItem {
+  width: 50%;
+}
+.l-flex--area .l-flex--contents.-p-title01 .flexItem.-title {
+  width: 42%;
+}
+@media screen and (min-width: 767px) {
+  .l-flex--area .l-flex--contents.-p-title01 .flexItem.-title {
+    width: 38%;
+  }
+}
 .l-flex--area .l-flex--contents.-setsubi-itemArea_sp {
   display: flex;
 }
@@ -2506,6 +2523,14 @@ img {
 @media screen and (min-width: 767px) {
   .l-text.-sizeLL {
     font-size: clamp(10px, 2.5vw, 28px);
+  }
+}
+.l-text.-sizeLL.-En {
+  font-size: 22px;
+}
+@media screen and (min-width: 767px) {
+  .l-text.-sizeLL.-En {
+    font-size: clamp(10px, 2.5vw, 31px);
   }
 }
 .l-text.-size3L {

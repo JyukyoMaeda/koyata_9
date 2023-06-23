@@ -55,6 +55,12 @@
             @include mq(tb){
                 font-size: clamp(10px, 2.5vw, 28px);
             }
+            &.-En{
+                font-size: 22px;
+                @include mq(tb){
+                    font-size: clamp(10px, 2.5vw, 31px);
+                }
+            }
         }
         &.-size3L{//35px
             font-size: 20px;
@@ -409,4 +415,7 @@
             color: $site-color01;
         }
     }
+
+
+
 }

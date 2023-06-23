@@ -677,7 +677,23 @@
 		}
 
 
+		// 各ページのタイトル用
 
+		&.-p-title01{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: flex-start;
+			.flexItem{
+				width: 50%;
+				&.-title{
+					width: 42%;
+					@include mq(tb){
+						width: 38%;
+					}
+				}
+			}
+		}
 
 
 
