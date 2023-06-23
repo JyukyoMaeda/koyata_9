@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156.3692087 22.5443711">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #606060;
+      }
+
+      .cls-4 {
+        letter-spacing: .2499991em;
+      }
+
+      .cls-3 {
+        font-family: ShipporiMincho-Regular, 'Shippori Mincho';
+        font-size: 17.4844398px;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <text class="cls-3" transform="translate(31.4785113 17.8935838)"><tspan x="0" y="0">9：0</tspan><tspan class="cls-4" x="35.8779297" y="0">0～</tspan><tspan x="71.1962891" y="0">20：00</tspan></text>
+    <g>
+      <circle class="cls-2" cx="11.1478323" cy="11.1478323" r="11.1478323"/>
+      <polyline class="cls-1" points="11.1478323 4.6232151 11.1478323 12.33644 15.4873493 9.6234498"/>
+    </g>
+  </g>
+</svg>

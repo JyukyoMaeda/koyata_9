@@ -61,6 +61,11 @@
                     font-size: clamp(10px, 2.5vw, 31px);
                 }
             }
+            &.-v02{
+                @include mq(tb){
+                    font-size: clamp(10px, 2.5vw, 25px);
+                }
+            }
         }
         &.-size3L{//35px
             font-size: 20px;
