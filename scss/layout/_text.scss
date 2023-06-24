@@ -348,6 +348,24 @@
             background: url(../images/SVG/sp_icon05.svg) no-repeat;
         }
     }
+    &.-ACCESS{
+        position: relative;
+        &::after{
+            content: "ACCESS";
+            font-size: .6vw;
+            font-weight: bold;
+            position: absolute;
+            top:20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-sp-ACCESS{
+        position: relative;
+        &::after{
+            background: url(../images/SVG/sp_icon05.svg) no-repeat;
+        }
+    }
     &.-JYUKYO{
         position: relative;
         &::after{

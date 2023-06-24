@@ -113,7 +113,7 @@ p {
   }
 }
 body {
-  animation: fadein 2s forwards;
+  animation: fadein 3.5s forwards;
 }
 
 img {
@@ -2947,6 +2947,24 @@ img {
   position: relative;
 }
 .l-text.-sp-LOCATION::after {
+  background: url(../images/SVG/sp_icon05.svg) no-repeat;
+}
+.l-text.-ACCESS {
+  position: relative;
+}
+.l-text.-ACCESS::after {
+  content: "ACCESS";
+  font-size: 0.6vw;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-text.-sp-ACCESS {
+  position: relative;
+}
+.l-text.-sp-ACCESS::after {
   background: url(../images/SVG/sp_icon05.svg) no-repeat;
 }
 .l-text.-JYUKYO {
