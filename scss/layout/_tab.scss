@@ -2,46 +2,62 @@
 
 .l-tabs--area{
     text-align: center;
-    @media screen and (min-width: 767px){
-        width: 100%;
-        max-width: 1000px;
+    width: 100%;
+    
+    @include mq(tb){
+        max-width: 1500px;
         margin: auto;
     }
     .tab-item{
         display: inline-block;
-        width: calc(22% - 10px);
-        margin: 0 5px;
-        font-size: 12px;
-        line-height: 2;
-        color: white;
-        background: #B9B9B9;
+        // width: calc(33.3333% - 10px);
+        // margin: 0 5px;
         text-align: center;
         font-weight: bold;
-        transition: all .3s ease;
-        &:hover{
-            background: #66BBC4;
-            box-shadow: 1px 1px 4px 0px $item-hover--bg;
+        transform: scale(1);
+        transition-duration: 0.5s;
+        overflow: hidden;
+        @include mq(tb){
+            width: 35%;
+            margin: 0 30px;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                transform: scale(.98);
+                transition-duration: 0.2s;
+            }
         }
-        @media screen and (min-width: 767px){
-            width: 15%;
+        &.-tab01{
+            width: calc(17% - 10px);
+            margin: 0 10px 0 0;
+        }
+        &.-tab02{
+            width: calc(47% - 10px);
             margin: 0 5px;
-            font-size: 20px;
-            line-height: 1.5;
+        }
+        &.-tab03{
+            width: calc(23% - 10px);
+            margin: 0 0 0 10px;
+        }
+        &.-last{
+            margin: 0 5px;
         }
     }
+
+
+
+
     input[name="tab-item"] {
         display: none;
     }
     .tab-content {
         display: none;
-        padding: 45px 0px 40px;
-        margin: auto 10px;
+        // padding: 0px 0px 40px;
+        margin: 0 auto 10px;
         clear: both;
         overflow: hidden;
         @media screen and (min-width: 767px){
-            margin-left: 14%;
-            margin-right: -5%;
             padding: 45px 0px 85px;
+            margin: auto 10px;
         }
         .tab-content-img{
             img{
@@ -50,19 +66,21 @@
             }
         }
     }
-    #iruma:checked ~ #iruma-content,
-    #tokorozawa:checked ~ #tokorozawa-content,
-    #hannou:checked ~ #hannou-content,
-    #kawagoe:checked ~ #kawagoe-content {
+    #line01:checked ~ #line01-content,
+    #line02:checked ~ #line02-content,
+    #line03:checked ~ #line03-content {
         display: block !important;
-        // opacity: 1;
-        // transition: all 1s ease;
+        animation: fadein 2s forwards;
     }
     input:checked + .tab-item {
-        background-color: #66BBC4;
-        color: white;
-        text-shadow: 1px 1px 1px $item-hover--bg;
-        box-shadow: 1px 1px 4px 0px $item-hover--bg;
+        // background-color: #66BBC4;
+        // color: white;
+        // text-shadow: 1px 1px 1px $item-hover--bg;
+        // box-shadow: 1px 1px 4px 0px $item-hover--bg;
+        // transform: scale(0.95);
         transition: all .3s ease;
+        @include mq(tb){
+
+        }
     }
 }

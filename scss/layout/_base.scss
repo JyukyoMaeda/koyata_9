@@ -85,6 +85,24 @@ img{
     }
 
 }
+.border-bottom{
+	width: 100%;
+	max-width: 1260px;
+	margin: 0 auto 4vh;
+	border-bottom: 1px solid black;
+	@include mq(tb){
+		margin: 0 auto 12vh;
+	}
+	&.-s{
+		margin: 0 auto 6vh;
+		@include mq(tb){
+
+		}
+	}
+	&.-last{
+		margin: 0 auto;
+	}
+}
 
 
 

@@ -143,6 +143,24 @@ img {
   max-width: 45px;
 }
 
+.border-bottom {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto 4vh;
+  border-bottom: 1px solid black;
+}
+@media screen and (min-width: 767px) {
+  .border-bottom {
+    margin: 0 auto 12vh;
+  }
+}
+.border-bottom.-s {
+  margin: 0 auto 6vh;
+}
+.border-bottom.-last {
+  margin: 0 auto;
+}
+
 .w1200 {
   width: 95% !important;
   max-width: 1200px;
@@ -3038,73 +3056,76 @@ img {
 
 .l-tabs--area {
   text-align: center;
+  width: 100%;
 }
 @media screen and (min-width: 767px) {
   .l-tabs--area {
-    width: 100%;
-    max-width: 1000px;
+    max-width: 1500px;
     margin: auto;
   }
 }
 .l-tabs--area .tab-item {
   display: inline-block;
-  width: calc(22% - 10px);
-  margin: 0 5px;
-  font-size: 12px;
-  line-height: 2;
-  color: white;
-  background: #B9B9B9;
   text-align: center;
   font-weight: bold;
-  transition: all 0.3s ease;
-}
-.l-tabs--area .tab-item:hover {
-  background: #66BBC4;
-  box-shadow: 1px 1px 4px 0px #9e9a9a;
+  transform: scale(1);
+  transition-duration: 0.5s;
+  overflow: hidden;
 }
 @media screen and (min-width: 767px) {
   .l-tabs--area .tab-item {
-    width: 15%;
-    margin: 0 5px;
-    font-size: 20px;
-    line-height: 1.5;
+    width: 35%;
+    margin: 0 30px;
+    transition: all 0.3s ease-in-out;
   }
+  .l-tabs--area .tab-item:hover {
+    transform: scale(0.98);
+    transition-duration: 0.2s;
+  }
+}
+.l-tabs--area .tab-item.-tab01 {
+  width: calc(17% - 10px);
+  margin: 0 10px 0 0;
+}
+.l-tabs--area .tab-item.-tab02 {
+  width: calc(47% - 10px);
+  margin: 0 5px;
+}
+.l-tabs--area .tab-item.-tab03 {
+  width: calc(23% - 10px);
+  margin: 0 0 0 10px;
+}
+.l-tabs--area .tab-item.-last {
+  margin: 0 5px;
 }
 .l-tabs--area input[name=tab-item] {
   display: none;
 }
 .l-tabs--area .tab-content {
   display: none;
-  padding: 45px 0px 40px;
-  margin: auto 10px;
+  margin: 0 auto 10px;
   clear: both;
   overflow: hidden;
 }
 @media screen and (min-width: 767px) {
   .l-tabs--area .tab-content {
-    margin-left: 14%;
-    margin-right: -5%;
     padding: 45px 0px 85px;
+    margin: auto 10px;
   }
 }
 .l-tabs--area .tab-content .tab-content-img img {
   width: 100%;
   height: auto;
 }
-.l-tabs--area #iruma:checked ~ #iruma-content,
-.l-tabs--area #tokorozawa:checked ~ #tokorozawa-content,
-.l-tabs--area #hannou:checked ~ #hannou-content,
-.l-tabs--area #kawagoe:checked ~ #kawagoe-content {
+.l-tabs--area #line01:checked ~ #line01-content,
+.l-tabs--area #line02:checked ~ #line02-content,
+.l-tabs--area #line03:checked ~ #line03-content {
   display: block !important;
+  animation: fadein 2s forwards;
 }
 .l-tabs--area input:checked + .tab-item {
-  background-color: #66BBC4;
-  color: white;
-  text-shadow: 1px 1px 1px #9e9a9a;
-  box-shadow: 1px 1px 4px 0px #9e9a9a;
   transition: all 0.3s ease;
 }
-
 /* モーダルCSS */
 .l-modal--area {
   display: none;
