@@ -1,0 +1,35 @@
+
+.iconArea{
+    .svg-icon{
+        padding: 5% 0;
+        &.-active{
+            color: white;
+            background: $nav-active-bg;
+            .svg-inner{
+                &.-top,
+                &.-concept,
+                &.-cityscapce,
+                &.-built,
+                &.-location{
+                    stroke: white !important;
+                    fill: white !important;
+                }
+                &.-setsubi,
+                &.-access{
+                    fill: white !important;
+                }
+            }
+        }
+        .svg-inner{
+            padding: 0 38%;
+            // &:hover{
+        
+            // }
+            &.-access{
+                padding: 0 42.7%;
+            }
+        }
+    }
+}
+
+

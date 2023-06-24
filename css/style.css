@@ -1017,7 +1017,7 @@ img {
 @media screen and (min-width: 767px) {
   .l-flex--area .l-flex--contents.-columnBox04 .flexItem {
     width: 25%;
-    padding: 0 2%;
+    padding: 0 1%;
   }
 }
 .l-flex--area .l-flex--contents.-columnBox05 {
@@ -1744,7 +1744,11 @@ img {
 
 .l-header {
   background: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+}
+@media screen and (min-width: 767px) {
+  .l-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+  }
 }
 .l-header .l-header-obi {
   width: 95%;
@@ -1807,7 +1811,7 @@ img {
   font-size: 3vw;
   color: black;
   background: white;
-  padding: 4vh 0 0.5vh;
+  padding: 1vh 0 0.5vh;
   border-radius: 5px;
   overflow: hidden;
   transition: 0.3s all;
@@ -1841,7 +1845,7 @@ img {
 }
 @media screen and (min-width: 767px) {
   .active {
-    border-bottom: 0.5vh solid #002a37 !important;
+    border-bottom: 0.5vh solid #41606a !important;
   }
 }
 
@@ -2624,7 +2628,7 @@ img {
 }
 @media screen and (min-width: 767px) {
   .l-text.-sizeM.-v02 {
-    font-size: clamp(12px, 1vw, 18px);
+    font-size: clamp(12px, 1vw, 17px);
   }
 }
 @media screen and (min-width: 767px) {
@@ -2859,6 +2863,18 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.l-text.-TOP02 {
+  position: relative;
+}
+.l-text.-TOP02::after {
+  content: "TOP";
+  font-size: 0.9vw;
+  font-weight: bold;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .l-text.-sp-TOP {
   position: relative;
 }
@@ -2874,6 +2890,18 @@ img {
   font-weight: bold;
   position: absolute;
   top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-text.-CITYSCAPE02 {
+  position: relative;
+}
+.l-text.-CITYSCAPE02::after {
+  content: "CITYSCAPE";
+  font-size: 0.9vw;
+  font-weight: bold;
+  position: absolute;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -2907,6 +2935,31 @@ img {
     line-height: 1.7;
   }
 }
+.l-text.-BUILT02 {
+  position: relative;
+}
+.l-text.-BUILT02::after {
+  content: "BUILT HOUSE";
+  width: 100%;
+  font-size: 0.6vw;
+  font-weight: bold;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 767px) {
+  .l-text.-BUILT02::after {
+    font-size: 0.9vw;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .l-text.-BUILT02::after {
+    font-size: 0.9vw;
+    line-height: 1.7;
+  }
+}
 .l-text.-sp-BUILT {
   position: relative;
 }
@@ -2922,6 +2975,18 @@ img {
   font-weight: bold;
   position: absolute;
   top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-text.-SETSUBI02 {
+  position: relative;
+}
+.l-text.-SETSUBI02::after {
+  content: "EQUIPMENT";
+  font-size: 0.9vw;
+  font-weight: bold;
+  position: absolute;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -2943,6 +3008,18 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.l-text.-LOCATION02 {
+  position: relative;
+}
+.l-text.-LOCATION02::after {
+  content: "LOCATION";
+  font-size: 0.9vw;
+  font-weight: bold;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .l-text.-sp-LOCATION {
   position: relative;
 }
@@ -2958,6 +3035,18 @@ img {
   font-weight: bold;
   position: absolute;
   top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-text.-ACCESS02 {
+  position: relative;
+}
+.l-text.-ACCESS02::after {
+  content: "ACCESS";
+  font-size: 0.9vw;
+  font-weight: bold;
+  position: absolute;
+  top: 23%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -3070,6 +3159,27 @@ img {
   .l-newsBer {
     padding: 3vh 0;
   }
+}
+
+.iconArea .svg-icon {
+  padding: 5% 0;
+}
+.iconArea .svg-icon.-active {
+  color: white;
+  background: #41606a;
+}
+.iconArea .svg-icon.-active .svg-inner.-top, .iconArea .svg-icon.-active .svg-inner.-concept, .iconArea .svg-icon.-active .svg-inner.-cityscapce, .iconArea .svg-icon.-active .svg-inner.-built, .iconArea .svg-icon.-active .svg-inner.-location {
+  stroke: white !important;
+  fill: white !important;
+}
+.iconArea .svg-icon.-active .svg-inner.-setsubi, .iconArea .svg-icon.-active .svg-inner.-access {
+  fill: white !important;
+}
+.iconArea .svg-icon .svg-inner {
+  padding: 0 38%;
+}
+.iconArea .svg-icon .svg-inner.-access {
+  padding: 0 42.7%;
 }
 
 .l-tabs--area {

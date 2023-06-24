@@ -1,7 +1,9 @@
 
 .l-header{
     background: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+    @include mq(tb){
+        border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+    }
     .l-header-contents{
 
     }
@@ -9,9 +11,9 @@
         width: 95%;
         margin: auto;
     }
+    // PCのみ
     .l-header-nav{
         // margin-top: -2.5vh;
-  
         @include mq(tb){
             margin-top: 1vh;
         }
@@ -48,6 +50,8 @@
             
         }
     }
+
+    // SPのみ
     .l-header-navBox{
         background: $site-color01;
         &__inner{
@@ -69,8 +73,8 @@
                 font-size: 3vw;
                 color: black;
                 background: white;
-                padding: 4vh 0 .5vh;
-                // padding: 5vh 0 1.5vh;
+                padding: 1vh 0 .5vh;
+                // padding: 4vh 0 .5vh;
                 border-radius: 5px;
                 overflow: hidden;
                 transition: .3s all;

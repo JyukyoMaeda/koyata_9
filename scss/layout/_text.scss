@@ -35,7 +35,7 @@
             }
             &.-v02{
                 @include mq(tb){
-                    font-size: clamp(12px, 1vw, 18px);
+                    font-size: clamp(12px, 1vw, 17px);
                 }
             }
             &.-v03{
@@ -262,6 +262,18 @@
             transform: translate(-50%,-50%);
         }
     }
+    &.-TOP02{
+        position: relative;
+        &::after{
+            content: "TOP";
+            font-size: .9vw;
+            font-weight: bold;
+            position: absolute;
+            top:23%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
     &.-sp-TOP{
         position: relative;
         &::after{
@@ -276,6 +288,18 @@
             font-weight: bold;
             position: absolute;
             top:20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-CITYSCAPE02{
+        position: relative;
+        &::after{
+            content: "CITYSCAPE";
+            font-size: .9vw;
+            font-weight: bold;
+            position: absolute;
+            top:23%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -306,6 +330,27 @@
             }
         }
     }
+    &.-BUILT02{
+        position: relative;
+        &::after{
+            content: "BUILT HOUSE";
+            width: 100%;
+            font-size: .6vw;
+            font-weight: bold;
+            position: absolute;
+            top:23%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            @include mq(tb){
+                font-size: .9vw;
+                line-height: 1.2;
+            }
+            @include mq(pc){
+                font-size: .9vw;
+                line-height: 1.7;
+            }
+        }
+    }
     &.-sp-BUILT{
         position: relative;
         &::after{
@@ -320,6 +365,18 @@
             font-weight: bold;
             position: absolute;
             top:20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-SETSUBI02{
+        position: relative;
+        &::after{
+            content: "EQUIPMENT";
+            font-size: .9vw;
+            font-weight: bold;
+            position: absolute;
+            top:23%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -342,6 +399,18 @@
             transform: translate(-50%,-50%);
         }
     }
+    &.-LOCATION02{
+        position: relative;
+        &::after{
+            content: "LOCATION";
+            font-size: .9vw;
+            font-weight: bold;
+            position: absolute;
+            top:23%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
     &.-sp-LOCATION{
         position: relative;
         &::after{
@@ -356,6 +425,18 @@
             font-weight: bold;
             position: absolute;
             top:20%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    &.-ACCESS02{
+        position: relative;
+        &::after{
+            content: "ACCESS";
+            font-size: .9vw;
+            font-weight: bold;
+            position: absolute;
+            top:23%;
             left: 50%;
             transform: translate(-50%,-50%);
         }
