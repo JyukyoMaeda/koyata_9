@@ -12,6 +12,23 @@
 			&.-noPD_l{
 				padding-left: 0 !important;
 			}
+			// pcのみ
+			&.-noPD_pc{
+				@include mq(tb){
+					padding: 0 !important;
+				}
+			}
+			&.-noPD_r_pc{
+				@include mq(tb){
+					padding-right: 0 !important;
+				}
+			}
+			&.-noPD_l_pc{
+				@include mq(tb){
+					padding-left: 0 !important;
+				}
+			}
+			// spのみ
 			&.-noPD_s{
 				@include mq(sp){
 					padding: 0 !important;
@@ -227,10 +244,10 @@
 			&.-w_7-3{
 				@include mq(tb){
 					.flexItem{
-						&:nth-child(1){
+						&.-textArea{
 							width: 70%;
 						}
-						&:nth-child(2){
+						&.-picArea{
 							width: 30%;
 						}
 					}
@@ -343,7 +360,24 @@
 				}
 			}
 		}
-
+		&.-columnBox_sp{//spのみ > flex
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: flex-end;
+			@include mq(tb){
+				flex-wrap: wrap;
+				align-items: flex-start;
+				justify-content: space-around;
+			}
+			.flexItem{
+				width: 50%;
+				padding: 0 5%;
+				@include mq(tb){
+					width: 100%;
+					padding: 0 2%;
+				}
+			}
+		}
 
 		&.-flexView{
 			display: flex;
