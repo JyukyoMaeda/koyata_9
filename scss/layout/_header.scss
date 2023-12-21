@@ -39,12 +39,20 @@
                 display: block;
                 width: 100%;
                 color: black;
-                border-bottom: .5vh solid white;
-                padding: 2vh 0 .5vh;
+                padding: 3vh 0 .5vh;
                 transition: .3s all;
-                &:hover{
-                    border-bottom: .5vh solid $nav-hover-bg;
-
+                &.-b_btm{
+                    border-bottom: .5vh solid white;
+                    transition: .3s all;
+                    &:hover{
+                        border-bottom: .5vh solid $nav-hover-bg;
+                    }
+                }
+                &.-g_out{
+                    background: rgb(214, 214, 214);
+                    border-bottom: 0.5vh solid rgb(214, 214, 214);
+                    color: white;
+                    opacity: .6;
                 }
             }
             
@@ -91,9 +99,14 @@
                         top:35%;
                     }
                 }
-                &:hover{
-                    border-bottom: .5vh solid $nav-hover-bg;
+                &.-g_out{
+                    background: rgb(214, 214, 214);
+                    color: white;
+                    // opacity: .6;
                 }
+                // &:hover{
+                //     border-bottom: .5vh solid $nav-hover-bg;
+                // }
             }
         }
     }
